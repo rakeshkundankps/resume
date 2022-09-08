@@ -63,6 +63,11 @@
     transition-timing-function:ease-in;
     transition-duration: .25s;
 }
+#navigation #skills:hover {
+    transform: translateX(3.4em);
+    transition-timing-function:ease-in;
+    transition-duration: .25s;
+}
 
 #navigation a:hover .navtext{
     display: inline-block;
@@ -92,6 +97,11 @@ color: rgb(123, 244, 31);
 {
 background-color: rgb(19, 124, 173);
 color: rgb(211, 148, 72);
+}
+#navigation a:nth-of-type(6)
+{
+background-color: pink;
+color: red;
 }
 
 
@@ -187,23 +197,34 @@ color: rgb(211, 148, 72);
 
     #navigation #home:hover {
         transform: translateX(0);
+        transform: translateY(-.2em);
         transition-timing-function:ease-in;
         transition-duration: .25s;
     }
     #navigation #education:hover {
         transform: translateX(0);
+        transform: translateY(-.2em);
         transition-timing-function:ease-in;
         transition-duration: .25s;
     }#navigation #hobbies:hover {
         transform: translateX(0);
+        transform: translateY(-.2em);
         transition-timing-function:ease-in;
         transition-duration: .25s;
     }#navigation #project:hover {
         transform: translateX(0);
+        transform: translateY(-.2em);
         transition-timing-function:ease-in;
         transition-duration: .25s;
     }#navigation #contacts:hover {
         transform: translateX(0);
+        transform: translateY(-.2em);
+        transition-timing-function:ease-in;
+        transition-duration: .25s;
+    }
+    #navigation #skills:hover {
+        transform: translateX(0);
+        transform: translateY(-.2em);
         transition-timing-function:ease-in;
         transition-duration: .25s;
     }
@@ -236,6 +257,12 @@ color: rgb(211, 148, 72);
     background:none;
     color: #ffa260;
     }
+    #navigation a:nth-of-type(6)
+    {
+    background-color: transparent;
+    color: red;
+    }
+    
 
    #navigation a{
         background: none;
@@ -289,10 +316,52 @@ color: rgb(211, 148, 72);
     justify-content: center;
     background-image: linear-gradient(45deg,blue,red);
     height: 50vh;
-    width: 30%;
+    width: 26%;
     border-radius: 2em;
-    
+}
+@media(max-width:1272px)
+{
+    .education div{
+        font-size:.8em;
+    }
+}
+@media(max-width:1121px)
+{
+    .education{
+        flex-wrap: wrap;
+    }
+    .education div{
+        width: auto;
+        padding: .2ems;
+    }
+}
 
+
+
+
+/* Skills */
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.skill>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.skilllogo{
+    height: 30vh;
+}
+.ccpp{
+    display: flex;
+    flex-direction: column;
+   
+    align-content: center;
 }
 
 
