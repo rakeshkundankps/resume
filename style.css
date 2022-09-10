@@ -124,7 +124,8 @@ color: red;
 }
 #introtext{
     padding-left: 1em ;
-    color: wheat;
+    /* color: wheat; */
+    color: #ffffff;
     font-family: Comic sans ms;
     font-size: 2em;
 }
@@ -134,7 +135,8 @@ color: red;
 {
     #introtext{
         padding-left: 1em ;
-        color: wheat;
+        /* color: wheat; */
+        color: #ffffff;
         font-family: Comic sans ms;
         font-size: 1.5em;
     }
@@ -448,6 +450,9 @@ color: red;
    justify-content: center;
    align-self: center;
    /* padding-right: 20vw; */
+}
+.hobbies>div{
+    color: #ecc078;
 }
 
 
