@@ -423,12 +423,12 @@ color: red;
     
     background-color: #000000;
     color: red;
-    height: 100vh;
+    height:auto;
 }
 
 
 
-.hobbies{
+.hobbies ,.contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -448,6 +448,27 @@ color: red;
    justify-content: center;
    align-self: center;
    /* padding-right: 20vw; */
+}
+
+
+.contactlogo{
+    width: 3em;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: max-content;
+    padding: 2em;
+}
+.contact a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 1em;
+
+    color: #ecc078;
 }
 
 
