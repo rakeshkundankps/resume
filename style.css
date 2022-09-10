@@ -303,9 +303,12 @@ color: red;
 /* Education */
 .education
 {
-    background-image: url(resources/edubackground.jpeg);
+    /* background-image: url(resources/edubackground.jpeg); */
+    background-image: linear-gradient(45deg,#00F260,#0575E6);
     background-size: 100% 100%;
     height: 100vh;
+    width: 100%;
+    /* height: max-content; */
     /* position: relative; */
     display: flex;
     justify-content: space-evenly;
@@ -325,10 +328,22 @@ color: red;
     width: 26%;
     border-radius: 2em;
 }
+@media(max-width:867px)
+{
+    .education{
+        height: max-content;
+    }
+}
 @media(max-width:1272px)
 {
+
     .education div{
         font-size:.8em;
+        width: auto;
+        padding: .2ems;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        
     }
 }
 @media(max-width:1121px)
@@ -339,7 +354,15 @@ color: red;
     .education div{
         width: auto;
         padding: .2ems;
+        margin-top: .5em;
     }
+}
+@media(max-width:666px)
+{
+    .education{
+        height: max-content;
+    }
+    
 }
 
 
@@ -435,11 +458,13 @@ color: red;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 30%;
+    /* width: 30%; */
+    width:auto;
     margin: 5em;
     height: auto;
     border: solid red .3em ;
     border-radius: .3em;
+    font-size-adjust: .8;
 }
 
 .hobbies h2{
@@ -463,7 +488,7 @@ color: red;
     display: flex;
     flex-direction: column;
     align-items:center;
-    width: max-content;
+    /* width: max-content; */
     padding: 2em;
 }
 .contact a{
@@ -474,6 +499,19 @@ color: red;
     margin-top: 1em;
 
     color: #ecc078;
+}
+
+
+@media(max-width:937px)
+{
+    .lastthree{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #000000;
+        color: red;
+        height:auto;
+    }
 }
 
 
