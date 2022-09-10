@@ -448,6 +448,7 @@ color: red;
 
 .lastthree{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     background-color: #000000;
