@@ -344,6 +344,9 @@ color: red;
 
 
 /* Skills */
+.skill a{
+    text-decoration: none;
+}
 
 .skill{
     display: flex;
@@ -351,19 +354,21 @@ color: red;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
+    /* height: 100vh; */
     
     text-align: center;
 }
 .skill>div{
     display: flex;
     flex-direction: row;
+    margin-top: 5em;
     justify-content: space-evenly;
     width: 100vw;
 }
 #top{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 
 }
@@ -381,6 +386,70 @@ color: red;
     align-content: center;
     
 }
+#bottom{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.profile{
+    background-color:#f8f9fa;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+}
+.profile img{
+    border: solid red .2em;
+    border-radius: .2em;
+    padding: 02em;
+    width: 8em;
+
+}
+#psolvinglogo{
+    flex-grow: .8;
+}
+
+
+
+
+.lastthree{
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-color: #000000;
+    color: red;
+    height: 100vh;
+}
+
+
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    margin: 5em;
+    height: auto;
+    border: solid red .3em ;
+    border-radius: .3em;
+}
+
+.hobbies h2{
+    display: inline-block;
+}
+.hobbies h1{
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   /* padding-right: 20vw; */
+}
+
 
 
 
